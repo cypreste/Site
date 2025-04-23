@@ -1,41 +1,52 @@
-// Este é um modelo de site em C++ para fins didáticos, simulando uma aplicação backend que serviria um portfólio
-// Em um cenário real, um site seria implementado com HTML/CSS/JS, mas podemos usar C++ para simular lógica ou servidor
+import React from 'react';
 
-#include <iostream>
-#include <string>
-#include <vector>
+const projetos = [
+    {
+        nome: '🃏 Super Trunfo - Batalha de Cartas em C',
+        descricao: 'Projeto em C para lógica e estrutura de dados',
+        link: 'https://github.com/cypreste/Desafio-Cartas-Super-Trunfo
+    // Adicione mais projetos aqui
+];
 
-struct Projeto {
-    std::string nome;
-    std::string descricao;
-    std::string link;
+const Home = () => {
+    return (
+        <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
+            <h1>Raphael Nascimento</h1>
+            <p>
+                Estudante de Ciência da Computação | Foco em Desenvolvimento e Lógica | Buscando Estágio em TI
+            </p>
+            <p>
+                <strong>GitHub:</strong>{' '}
+                <a href="https://github.com/cypreste" target="_blank" rel="noopener noreferrer">
+                https://github.com/cypreste
+                </a>
+            </p>
+            <p>
+                <strong>LinkedIn:</strong>{' '}
+                <a href="https://www.linkedin.com/in/raphaelcypreste/" target="_blank" rel="noopener noreferrer">
+                https://www.linkedin.com/in/raphaelcypreste/
+                </a>
+            </p>
+            <p>
+                <strong>Currículo (PDF):</strong>{' '}
+                <a href="/curriculo-raphael.pdf" target="_blank" rel="noopener noreferrer">
+                    /curriculo-raphael.pdf
+                </a>
+            </p>
+
+            <h2>Projetos em Destaque:</h2>
+            <ul>
+                {projetos.map((projeto, index) => (
+                    <li key={index}>
+                        <strong>{projeto.nome}:</strong> {projeto.descricao}{' '}
+                        <a href={projeto.link} target="_blank" rel="noopener noreferrer">
+                            {projeto.link}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 };
 
-void exibirPerfil() {
-    std::cout << "Raphael Nascimento\n";
-    std::cout << "Estudante de Ciência da Computação | Foco em Desenvolvimento e Lógica | Buscando Estágio em TI\n";
-    std::cout << "GitHub: https://github.com/seuusuario\n";
-    std::cout << "LinkedIn: https://linkedin.com/in/seulinkedin\n";
-    std::cout << "Currículo (PDF): /curriculo-raphael.pdf\n";
-    std::cout << "\n";
-}
-
-void exibirProjetos(const std::vector<Projeto>& projetos) {
-    std::cout << "Projetos em Destaque:\n";
-    for (const auto& projeto : projetos) {
-        std::cout << "- " << projeto.nome << ": " << projeto.descricao << " (" << projeto.link << ")\n";
-    }
-}
-
-int main() {
-    exibirPerfil();
-
-    std::vector<Projeto> projetos = {
-        {"Comparador de Cartas (Super Trunfo)", "Projeto em C para lógica e estrutura de dados", "https://github.com/seuusuario/nome-do-projeto"}
-        // Adicione mais projetos aqui
-    };
-
-    exibirProjetos(projetos);
-
-    return 0;
-}
+export default Home;
