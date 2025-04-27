@@ -4,7 +4,8 @@ const projetos = [
     {
         nome: '🃏 Super Trunfo - Batalha de Cartas em C',
         descricao: 'Projeto em C para lógica e estrutura de dados',
-        link: 'https://github.com/cypreste/Desafio-Cartas-Super-Trunfo
+        link: 'https://github.com/cypreste/Desafio-Cartas-Super-Trunfo'
+    }
     // Adicione mais projetos aqui
 ];
 
