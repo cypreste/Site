@@ -28,17 +28,5 @@ O site foi criado com foco em performance, responsividade e boas práticas moder
 **Em breve**, com o site online!
 
 ---
-# 📫 Contato
-Se quiser conversar sobre projetos, oportunidades ou qualquer coisa:
-
-*Site:* cyprestedev.com.br
-
-*LinkedIn:* linkedin.com/in/raphaelcypreste
-
-*Email:* raphael.ncypreste@gmail.com
-
-*GitHub:* github.com/cypreste
-
----
 
 Desenvolvido por **Raphael Cypreste** 💻
