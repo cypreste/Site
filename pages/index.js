@@ -50,17 +50,9 @@ const Home = () => {
                 </a>
             </div>
 
-            <h2>Projetos em Destaque:</h2>
-            <ul>
-                {projetos.map((projeto, index) => (
-                    <li key={index} style={{ marginBottom: '10px' }}>
-                        <strong>{projeto.nome}:</strong> {projeto.descricao}{' '}
-                        <a href={projeto.link} target="_blank" rel="noopener noreferrer" style={{ color: '#0A66C2' }}>
-                            [Ver Projeto]
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            </div>
         </div>
     );
 };
+
+export default Home;
