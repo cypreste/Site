@@ -8,7 +8,7 @@ const projetos = [
     descricao: 'Projeto em C para lógica e estrutura de dados',
     link: 'https://github.com/cypreste/Desafio-Cartas-Super-Trunfo',
   },
-  // Adicione mais projetos aqui
+  // 
 ];
 
 const Home = () => {
