@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from '../styles/Home.module.css';
+import { FaGithub, FaLinkedin, FaFilePdf } from 'react-icons/fa'; // ÍCONES AQUI
 
 const projetos = [
   {
@@ -6,32 +8,38 @@ const projetos = [
     descricao: 'Projeto em C para lógica e estrutura de dados',
     link: 'https://github.com/cypreste/Desafio-Cartas-Super-Trunfo',
   },
-  // Você pode adicionar mais projetos aqui depois.
+  // Adicione mais projetos aqui
 ];
 
 const Home = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
+    <div className={styles.container}>
       <h1>Raphael Nascimento</h1>
       <p>
         Estudante de Ciência da Computação | Foco em Desenvolvimento e Lógica | Buscando Estágio em TI
       </p>
+
       <p>
+        <FaGithub size={20} style={{ marginRight: '8px' }} />
         <strong>GitHub:</strong>{' '}
         <a href="https://github.com/cypreste" target="_blank" rel="noopener noreferrer">
-          https://github.com/cypreste
+          github.com/cypreste
         </a>
       </p>
+
       <p>
+        <FaLinkedin size={20} style={{ marginRight: '8px' }} />
         <strong>LinkedIn:</strong>{' '}
         <a href="https://www.linkedin.com/in/raphaelcypreste/" target="_blank" rel="noopener noreferrer">
-          https://www.linkedin.com/in/raphaelcypreste/
+          linkedin.com/in/raphaelcypreste
         </a>
       </p>
+
       <p>
+        <FaFilePdf size={20} style={{ marginRight: '8px' }} />
         <strong>Currículo (PDF):</strong>{' '}
         <a href="/curriculo-raphael.pdf" target="_blank" rel="noopener noreferrer">
-          /curriculo-raphael.pdf
+          Baixar Currículo
         </a>
       </p>
 
@@ -39,9 +47,10 @@ const Home = () => {
       <ul>
         {projetos.map((projeto, index) => (
           <li key={index}>
-            <strong>{projeto.nome}:</strong> {projeto.descricao}{' '}
+            <strong>{projeto.nome}</strong>
+            {projeto.descricao}{' '}
             <a href={projeto.link} target="_blank" rel="noopener noreferrer">
-              {projeto.link}
+              Ver projeto
             </a>
           </li>
         ))}
