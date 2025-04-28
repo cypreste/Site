@@ -1,0 +1,107 @@
+.container {
+    font-family: 'Arial', sans-serif;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    animation: fadeInDown 0.8s ease-in-out;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    margin-top: 30px;
+    color: #222;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  li strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsivo para Celular */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    li {
+      padding: 10px;
+    }
+  }
+  
